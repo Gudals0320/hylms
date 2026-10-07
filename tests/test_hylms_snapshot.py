@@ -2329,6 +2329,15 @@ class CollectorIntegrationTest(unittest.TestCase):
 
 
 class SnapshotRunArchiveTest(unittest.TestCase):
+    def test_relative_output_root_and_canonical_archive_can_be_reported(self):
+        with tempfile.TemporaryDirectory(dir=Path.cwd()) as directory:
+            output = Path(directory).relative_to(Path.cwd())
+            messages = []
+            runner = hs.SnapshotRunner(FixtureCanvasClient(), output_root=output,
+                                      now=NOW, clock=lambda: NOW, out=messages.append)
+            self.assertEqual(0, runner.run("999"))
+            self.assertTrue(any("runs/" in line for line in messages))
+
     def test_unarchived_current_snapshot_is_preserved_once(self):
         with tempfile.TemporaryDirectory() as directory:
             term = Path(directory) / "26-2"

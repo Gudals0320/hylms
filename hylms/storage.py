@@ -687,7 +687,7 @@ class SnapshotRunner:
             return failed
         atomic_write_json(term_directory / "status.json", committed)
         if created:
-            self.out(f"[보존] {target.relative_to(term_directory).as_posix()}")
+            self.out(f"[보존] {target.relative_to(term_directory.resolve()).as_posix()}")
         return committed
 
     def _summarize(self, status: Mapping[str, Any]) -> None:
