@@ -155,6 +155,8 @@ def archive_snapshot_run(
     reuse_existing: bool = False,
     run_id: str | None = None,
 ) -> tuple[dict[str, Any], Path, bool]:
+    # Windows temp paths can use an 8.3 alias; always return the canonical path.
+    term_directory = Path(term_directory).resolve()
     matching = _matching_snapshot_run(term_directory, status) if reuse_existing else None
     if matching is not None:
         committed = copy.deepcopy(dict(status))
@@ -192,6 +194,7 @@ def archive_snapshot_run(
 
 
 def archive_current_snapshot(term_directory: Path) -> Path | None:
+    term_directory = Path(term_directory).resolve()
     status_path = term_directory / "status.json"
     if not status_path.exists():
         return None

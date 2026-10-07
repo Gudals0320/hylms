@@ -2353,6 +2353,7 @@ class SnapshotRunArchiveTest(unittest.TestCase):
             root_status = json.loads((term / "status.json").read_text(encoding="utf-8"))
 
             self.assertEqual(first, second)
+            self.assertEqual(first, first.resolve())
             self.assertEqual(1, len([path for path in (term / "runs").iterdir() if not path.name.startswith(".")]))
             self.assertEqual(5, root_status["schema_version"])
             self.assertEqual("committed", root_status["run_archive"]["status"])
