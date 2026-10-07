@@ -1,0 +1,93 @@
+{
+  "windows_user": "example-user",
+  "google_project": "example-project-123",
+  "ntfy_topic": "example-topic",
+  "legacy_event_authorities": {
+    "611389:913014:replacement-1": "not_applicable",
+    "611209:911634:company-briefing": "not_applicable",
+    "612893:911546:first-class-date-conflict": "not_applicable",
+    "611209:911126:chat-entry-deadline": "user",
+    "611652:service-period": "user",
+    "611652:report-submission-period": "user",
+    "613105:910601:sk-ai-application": "user",
+    "611697:912958:team-formation-deadline": "lms",
+    "613105:910594:assignment-submission-period": "lms"
+  },
+  "discussion_rules": [
+    {
+      "course_id": "611697",
+      "discussion_id": "909071",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909072",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909073",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909074",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909075",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909076",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909077",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909078",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909079",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909080",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909081",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909082",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909083",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909084",
+      "rule_id": "example-own-reply-v1"
+    },
+    {
+      "course_id": "611697",
+      "discussion_id": "909085",
+      "rule_id": "example-own-reply-v1"
+    }
+  ]
+}

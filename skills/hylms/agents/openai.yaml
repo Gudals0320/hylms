@@ -1,0 +1,6 @@
+interface:
+  display_name: "HY-LMS"
+  short_description: "명시 호출로 LMS 수집부터 알림·캘린더 조정까지 실행"
+  default_prompt: "$hylms 설정된 경로와 전송 목적지를 먼저 확인하고, 내가 승인한 범위에서 LMS 수집·해석·독립 QA·저장·알림·캘린더 동기화를 실행해줘."
+policy:
+  allow_implicit_invocation: false

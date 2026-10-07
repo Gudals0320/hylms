@@ -1,0 +1,8 @@
+{
+  "windows_user": "YOUR_WINDOWS_USER",
+  "google_project": "your-google-project",
+  "ntfy_topic": "YOUR_PRIVATE_TOPIC",
+  "schedule_hours": [10, 19],
+  "discussion_rules": [],
+  "legacy_event_authorities": {}
+}

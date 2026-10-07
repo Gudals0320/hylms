@@ -1,0 +1,7 @@
+{
+  "term": "26-2",
+  "courses": [
+    {"course_id":"101", "name":"Example Course", "authority":"user_confirmed",
+     "mode":"in_person", "slots":[{"weekday":0,"start":"10:00","end":"11:30","room":"Example Room"}]}
+  ]
+}
